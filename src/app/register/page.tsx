@@ -69,7 +69,7 @@ export default function Register() {
                             type="submit"
                             className="w-full flex items-center justify-center p-4 bg-blue-500 text-white font-semibold rounded-lg hover:bg-blue-600 focus:outline-none"
                         >
-                            Cadastrar
+                            Realizar Cadastro
                             <FiArrowRight className="ml-2" />
                         </button>
                     </form>
