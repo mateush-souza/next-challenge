@@ -1,5 +1,7 @@
 import Banner from "@/components/Banner";
+import Faq from "@/components/Faq";
 import Features from "@/components/Features";
+import Feedback from "@/components/Feedback";
 import Problems from "@/components/Problems";
 
 export default function Home() {
@@ -8,6 +10,8 @@ export default function Home() {
     <Banner />
     <Problems />
     <Features/>
+    <Feedback/>
+    <Faq/>
     </>
   );
 }

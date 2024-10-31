@@ -27,8 +27,6 @@ export default function Header() {
             height={500}
           />
         </div>
-
-        {/* Desktop Menu */}
         <div className="hidden md:flex md:col-span-6 justify-between font-semibold">
           <ul className="flex space-x-8">
             <li
@@ -46,8 +44,6 @@ export default function Header() {
             </li>
           </ul>
         </div>
-
-        {/* Desktop Button */}
         <div className="hidden md:flex md:col-span-4 justify-end">
           <button
             className="w-40 h-10 border border-blue-500 rounded-full text-blue-500 hover:bg-blue-500 hover:text-white transition duration-300"
@@ -55,8 +51,6 @@ export default function Header() {
             <Link href={'/login'}>Àrea do Cliente</Link>
           </button>
         </div>
-
-        {/* Mobile Menu Toggle */}
         <div className="md:hidden flex justify-end">
           {isMobileMenuOpen ? (
             <XMarkIcon className="w-8 h-8" onClick={toggleMobileMenu} />
@@ -66,7 +60,6 @@ export default function Header() {
         </div>
       </nav>
 
-      {/* Mobile Menu */}
       {isMobileMenuOpen && (
         <div className="md:hidden absolute right-0 top-20 w-full bg-white p-6 shadow-lg">
           <ul className="flex flex-col items-center space-y-4">
@@ -75,7 +68,9 @@ export default function Header() {
             >
               <Link href={'/'}>Home</Link>
             </li>
-            <li className="cursor-pointer">Diagnostico</li>
+            <li className="cursor-pointer">
+              <Link href={'/login'}>Diagnostico</Link>
+            </li>
             <li
               className="cursor-pointer"
             >
