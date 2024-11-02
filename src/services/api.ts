@@ -10,3 +10,14 @@ export const registerUser = async (data: { name: string; email: string; password
         throw error; 
     }
 };
+
+export default async function handler(req: any, res: any) {
+    if (req.method === 'POST') {
+      const { placa, marca, tipoMotor, transmissao, cor, quilometragem, manutencaoRecente, observacoes } = req.body;
+
+      res.status(200).json({ message: 'Veículo cadastrado com sucesso', data: req.body });
+    } else {
+      res.setHeader('Allow', ['POST']);
+      res.status(405).end(`Método ${req.method} não permitido`);
+    }
+  }
