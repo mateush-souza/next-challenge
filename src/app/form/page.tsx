@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from 'react';
 
 const VehicleForm: React.FC<any> = ({ vehicle, onSave, onCancel }) => {
-  const [vehicleData, setVehicleData] = useState<Vehicle>(() => {
+  const [vehicleData, setVehicleData] = useState<any>(() => {
     const savedData = localStorage.getItem('vehicleData');
     return savedData
       ? JSON.parse(savedData)
@@ -29,7 +29,7 @@ const VehicleForm: React.FC<any> = ({ vehicle, onSave, onCancel }) => {
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | any>) => {
     const { name, value, type, checked } = e.target;
-    setVehicleData((prev) => ({
+    setVehicleData((prev:any) => ({
       ...prev,
       [name]: type === 'checkbox' ? checked : value,
     }));
@@ -211,7 +211,7 @@ const VehicleForm: React.FC<any> = ({ vehicle, onSave, onCancel }) => {
 
 // Componente principal da página
 export default function Page() {
-  const handleSave = (vehicle: Vehicle) => {
+  const handleSave = (vehicle: any) => {
     // Lógica para salvar o veículo, como uma requisição para um backend
     console.log("Veículo salvo:", vehicle);
   };
