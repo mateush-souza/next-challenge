@@ -35,7 +35,7 @@ export function AuthProvider({ children }: any) {
         if (token) {
             recoverUserInformation().then(response => setUser(response.user))
         }
-    }, [])
+    }, [router])
 
     async function signIn({ email, password }: SignInData) {
         const { token, user } = await signInRequest({

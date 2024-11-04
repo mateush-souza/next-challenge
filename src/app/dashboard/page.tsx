@@ -61,7 +61,7 @@ export default function Dashboard() {
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 md:grid-cols-2 lg:grid-cols-2">
                     {cards.map((card, index) => (
-                        <Link href={card.link}>
+                        <Link href={card.link} key={index}>
                             <div
                                 key={index}
                                 className="p-6 bg-white border rounded-lg shadow-lg flex flex-col items-center hover:shadow-xl transition-shadow"
