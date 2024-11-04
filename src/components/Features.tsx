@@ -7,17 +7,15 @@ export default function Features() {
         <section className="p-10">
             <h2 className="text-blue-500 text-xl font-semibold">Funcionalidades</h2>
             <p className="text-gray-500 mt-2 mb-8">
-                Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum.
+            Explore as funcionalidades que tornam o AutoCheckup uma ferramenta essencial para o cuidado com seu veículo. Desde a identificação de problemas até o agendamento de reparos, nossa plataforma oferece uma experiência completa e intuitiva para que você tenha total controle sobre a manutenção do seu carro.
             </p>
             <div className="flex flex-col md:flex-row">
                 <div className="md:w-1/2 p-8 md:p-16 bg-blue-100 flex flex-col justify-center">
                     <h3 className="text-blue-600 text-2xl font-bold mb-4">
-                        Lorem ipsum dolor sit amet consectetur.
+                        Descrição da AutoCheckup
                     </h3>
                     <p className="text-gray-600">
-                        Lorem ipsum dolor sit amet consectetur. Elementum odio porta consectetur a velit tortor adipiscing turpis
-                        montes. Auctor viverra luctus neque quam. Faucibus erat risus morbi eleifend malesuada eget nisl est.
-                        Sagittis nunc mauris malesuada sed.
+                    Experimente a praticidade e segurança de diagnosticar seu veículo onde estiver. Nossa plataforma foi criada para facilitar a vida do motorista moderno, permitindo diagnósticos rápidos e eficientes, sem complicações.
                     </p>
                 </div>
 

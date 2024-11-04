@@ -4,12 +4,12 @@ import { useState } from 'react';
 import { FiChevronDown } from 'react-icons/fi';
 
 const faqData = [
-    { question: "Lorem ipsum dolor sit amet dolor", answer: "Resposta para a pergunta 1." },
-    { question: "Lorem ipsum dolor sit amet dolor", answer: "Resposta para a pergunta 2." },
-    { question: "Lorem ipsum dolor sit amet dolor", answer: "Resposta para a pergunta 3." },
-    { question: "Lorem ipsum dolor sit amet dolor", answer: "Resposta para a pergunta 4." },
-    { question: "Lorem ipsum dolor sit amet dolor", answer: "Resposta para a pergunta 5." },
-    { question: "Lorem ipsum dolor sit amet dolor", answer: "Resposta para a pergunta 6." },
+    { question: "Como funciona o AutoCheckup?", answer: "O AutoCheckup permite que você faça uma avaliação inicial do seu veículo, identificando possíveis problemas e direcionando para reparos, se necessário." },
+    { question: "Preciso ser cliente da Porto Seguro para usar o AutoCheckup?", answer: "Não é necessário ser cliente da Porto Seguro para acessar o AutoCheckup, mas clientes possuem benefícios adicionais." },
+    { question: "O AutoCheckup substitui uma revisão completa em uma oficina?", answer: "Não, o AutoCheckup é uma avaliação inicial. Para diagnósticos completos e manutenção, recomendamos levar o veículo a uma oficina especializada." },
+    { question: "O AutoCheckup é gratuito?", answer: "Sim, o acesso ao AutoCheckup é gratuito, mas alguns serviços de reparo indicados podem ter custo." },
+    { question: "Quais tipos de problemas o AutoCheckup pode identificar?", answer: "O AutoCheckup pode identificar problemas comuns, como falhas no motor, sistema de freios, iluminação e outros itens básicos de segurança." },
+    { question: "Como posso agendar um reparo após o diagnóstico?", answer: "Após o diagnóstico, você pode agendar um reparo diretamente pela plataforma, escolhendo uma oficina recomendada ou de sua preferência." },
 ];
 
 export default function Faq() {
@@ -22,7 +22,7 @@ export default function Faq() {
         <div className="min-h-[720px] px-6 lg:px-20 py-12">
         <h2 className="text-center text-2xl font-bold text-blue-600 mb-2">Tire suas dúvidas sobre a <span className="text-black">Auto Seguro</span></h2>
         <p className="text-center text-gray-500 mb-8">
-          Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum.
+        Encontre respostas para as perguntas mais frequentes e saiba como o AutoCheckup pode facilitar o cuidado com o seu veículo.
         </p>
         <div className="max-w-4xl mx-auto">
           {faqData.map((item, index) => (

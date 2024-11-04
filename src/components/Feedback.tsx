@@ -6,27 +6,27 @@ const feedbackItems ={
     cards : [
         {
           icon: icon1,
-          feedback: 'Lorem ipsum dolor sit amet consectetur. Viverra mi id felis praesent.',
-          name: 'Lorem ipsum',
-          description: 'Lorem ipsum',
+          feedback: 'Eu usei a plataforma e achei muito intuitiva',
+          name: 'Lucas Fialho',
+          description: 'Funcionou perfeitamente',
         },
         {
           icon: icon1,
-          feedback: 'Lorem ipsum dolor sit amet consectetur. Viverra mi id felis praesent.',
-          name: 'Lorem ipsum',
-          description: 'Lorem ipsum',
+          feedback: 'Deu certo realizar o auto checkup pela plataforma, obrigado pessoal!',
+          name: 'Cauan Aranega',
+          description: 'Adorei',
         },
         {
           icon: icon1, 
-          feedback: 'Lorem ipsum dolor sit amet consectetur. Viverra mi id felis praesent.',
-          name: 'Lorem ipsum',
-          description: 'Lorem ipsum',
+          feedback: 'Simples, fácil e intuitiva. Ótimo trabalho',
+          name: 'Mateus Henrique',
+          description: 'boa demais',
         },
         {
           icon: icon1, 
-          feedback: 'Lorem ipsum dolor sit amet consectetur. Viverra mi id felis praesent.',
-          name: 'Lorem ipsum',
-          description: 'Lorem ipsum',
+          feedback: 'Adorei o trabalho pessoal nota 10',
+          name: 'Luis Carlos',
+          description: 'Gostei bastante',
         },
     ]
 }
@@ -37,7 +37,7 @@ export default function Feedback(){
         <div className="mb-8">
           <h2 className="text-blue-600 text-3xl font-bold pl-4">Feedbacks dos usuários</h2>
           <p className="text-gray-500 mt-2 max-w-2xl pl-4">
-            Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum.
+          Veja o que nossos clientes têm a dizer sobre a experiência com o AutoCheckup. A satisfação e o conforto de poder realizar um diagnóstico de forma prática e com suporte confiável têm transformado a rotina de quem já utiliza nossa plataforma.
           </p>
         </div>
   

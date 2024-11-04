@@ -12,41 +12,26 @@ import { api } from "@/services/api";
 //Images
 import card1 from '@/image/dashboard/boneco1.png'
 import card2 from '@/image/dashboard/boneco2.png'
-import card3 from '@/image/dashboard/boneco3.png'
-import card4 from '@/image/dashboard/map.png'
-import card5 from '@/image/dashboard/calendar.png'
-import card6 from '@/image/dashboard/note.png'
+import card3 from '@/image/dashboard/key.png'
 
 const cards = [
     {
         title: "Fazer diagnóstico",
         description: "Lorem ipsum dolor sit amet consectetur.",
-        imgSrc: card1
+        imgSrc: card1,
+        link: '/chatbot'
     },
     {
         title: "Consultar diagnósticos",
         description: "Lorem ipsum dolor sit amet consectetur.",
-        imgSrc: card2
+        imgSrc: card2,
+        link: '/chatbot'
     },
     {
-        title: "Orçamentos",
+        title: "Meus Veículos",
         description: "Lorem ipsum dolor sit amet consectetur.",
-        imgSrc: card3
-    },
-    {
-        title: "Centro Automotivos",
-        description: "Lorem ipsum dolor sit amet consectetur.",
-        imgSrc: card4
-    },
-    {
-        title: "Agendamentos de reparos",
-        description: "Lorem ipsum dolor sit amet consectetur.",
-        imgSrc: card5
-    },
-    {
-        title: "Histórico de reparos",
-        description: "Lorem ipsum dolor sit amet consectetur.",
-        imgSrc: card6
+        imgSrc: card3,
+        link: '/gerenciamento-veiculos'
     }
 ];
 
@@ -74,20 +59,20 @@ export default function Dashboard() {
                     </p>
                 </div>
 
-                    <Link href="/form">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 md:grid-cols-2 lg:grid-cols-2">
                     {cards.map((card, index) => (
-                        <div
-                            key={index}
-                            className="p-6 bg-white border rounded-lg shadow-lg flex flex-col items-center hover:shadow-xl transition-shadow"
-                        >
-                            <Image src={card.imgSrc} alt={card.title} width={200} height={200} className="w-45 h-45 mb-4" />
-                            <h2 className="text-lg font-semibold text-blue-700 mb-2 text-center">{card.title}</h2>
-                            <p className="text-gray-500 text-center">{card.description}</p>
-                        </div>
+                        <Link href={card.link}>
+                            <div
+                                key={index}
+                                className="p-6 bg-white border rounded-lg shadow-lg flex flex-col items-center hover:shadow-xl transition-shadow"
+                            >
+                                <Image src={card.imgSrc} alt={card.title} width={200} height={200} className="w-45 h-45 mb-4" quality={100}/>
+                                <h2 className="text-lg font-semibold text-blue-700 mb-2 text-center">{card.title}</h2>
+                                <p className="text-gray-500 text-center">{card.description}</p>
+                            </div>
+                        </Link>
                     ))}
                 </div>
-                    </Link>
             </div>
             <div className="mt-8 bg-blue-800 text-white p-6 rounded-lg flex items-center">
                 <div className="flex-1">
@@ -100,6 +85,6 @@ export default function Dashboard() {
                     Ver detalhes
                 </button>
             </div>
-        </div>
+        </div >
     );
 }

@@ -11,32 +11,32 @@ const Problems = () => {
     problemsItems: [
       {
         title: "Relate seu problema",
-        description: "Lorem ipstum Lorem ipstum Lorem ipstum Lorem ipstum Lorem ipstum Lorem ipstumvLorem ipstumvv Lorem ipstumvvLorem ipstumLorem ipstum vLorem ipstum"
+        description: "Descreva os sintomas ou falhas que você está enfrentando com o seu veículo. Nossa plataforma guiará você no processo de identificar a causa provável e oferecer recomendações."
       },
       {
         title: "Realize o diagnóstico",
-        description: "Lorem ipstum Lorem ipstum Lorem ipstum Lorem ipstum Lorem ipstum Lorem ipstumvLorem ipstumvv Lorem ipstumvvLorem ipstumLorem ipstum vLorem ipstum"
+        description: "Através de uma série de perguntas e etapas guiadas, você pode fazer uma avaliação inicial dos principais sistemas do veículo. Obtenha informações detalhadas sobre o que pode estar acontecendo."
       },
       {
         title: "Orçe e realize o reparo",
-        description: "Lorem ipstum Lorem ipstum Lorem ipstum Lorem ipstum Lorem ipstum Lorem ipstumvLorem ipstumvv Lorem ipstumvvLorem ipstumLorem ipstum vLorem ipstum"
+        description: "Receba uma estimativa dos custos para solucionar o problema e agende o reparo de maneira prática e rápida, com opções de locais de confiança recomendados pela Porto Seguro."
       }
     ],
     cards: [
       {
         image: timer,
         title: "Ganho de tempo e dinheiro",
-        description: "Lorem ipstum Lorem ipstum Lorem ipstum Lorem ipstum Lorem ipstum Lorem ipstumvLorem ipstumvv"
+        description: "Com o AutoCheckup, você economiza tempo ao diagnosticar problemas rapidamente, sem precisar esperar uma avaliação inicial em uma oficina. Economize dinheiro ao saber exatamente o que precisa de atenção."
       },
       {
         image: warning,
         title: "Prevenção de maiores problemas",
-        description: "Lorem ipstum Lorem ipstum Lorem ipstum Lorem ipstum Lorem ipstum Lorem ipstumvLorem ipstumvv"
+        description: "Detecte pequenos problemas antes que se transformem em grandes despesas. Realizar o diagnóstico regular ajuda a manter o veículo em excelente estado e evita surpresas indesejadas."
       },
       {
         image: person,
         title: "Praticidade e conforto",
-        description: "Lorem ipstum Lorem ipstum Lorem ipstum Lorem ipstum Lorem ipstum Lorem ipstumvLorem ipstumvv"
+        description: "Tenha todo o suporte necessário para cuidar do seu veículo, direto do seu dispositivo. A plataforma é intuitiva e fácil de usar, garantindo que você tenha controle total, onde quer que esteja."
       }
     ]
   };

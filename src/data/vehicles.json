@@ -1,0 +1,33 @@
+[
+    {
+      "id": 1,
+      "placa": "ABC1234",
+      "possuiPlaca": true,
+      "marca": "Toyota",
+      "tipoMotor": "Gasolina",
+      "transmissao": "Automático",
+      "cor": "Preto",
+      "quilometragem": "50000",
+      "desconheceQuilometragem": false,
+      "manutencaoRecente": "Troca de óleo",
+      "semManutencaoRecente": false,
+      "observacoes": "Veículo em ótimo estado.",
+      "concordaTermos": true
+    },
+    {
+      "id": 2,
+      "placa": "XYZ5678",
+      "possuiPlaca": true,
+      "marca": "Honda",
+      "tipoMotor": "Diesel",
+      "transmissao": "Manual",
+      "cor": "Branco",
+      "quilometragem": "80000",
+      "desconheceQuilometragem": false,
+      "manutencaoRecente": "Revisão geral",
+      "semManutencaoRecente": false,
+      "observacoes": "Veículo com algumas marcas de uso.",
+      "concordaTermos": true
+    }
+  ]
+  
