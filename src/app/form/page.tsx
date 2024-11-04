@@ -18,8 +18,8 @@ type Vehicle = {
 };
 
 type VehicleFormProps = {
-  vehicle?: Vehicle;
-  onSave: (vehicle: Vehicle) => void;
+  vehicle?: any;
+  onSave: (vehicle: any) => void;
   onCancel: () => void;
 };
 
