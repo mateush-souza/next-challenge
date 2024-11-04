@@ -2,28 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 
-type Vehicle = {
-  placa: string;
-  possuiPlaca: boolean;
-  marca: string;
-  tipoMotor: string;
-  transmissao: string;
-  cor: string;
-  quilometragem: string;
-  desconheceQuilometragem: boolean;
-  manutencaoRecente: string;
-  semManutencaoRecente: boolean;
-  observacoes: string;
-  concordaTermos: boolean;
-};
-
-type VehicleFormProps = {
-  vehicle?: any;
-  onSave: (vehicle: any) => void;
-  onCancel: () => void;
-};
-
-const VehicleForm: React.FC<VehicleFormProps> = ({ vehicle, onSave, onCancel }) => {
+const VehicleForm: React.FC<any> = ({ vehicle, onSave, onCancel }) => {
   const [vehicleData, setVehicleData] = useState<Vehicle>(() => {
     const savedData = localStorage.getItem('vehicleData');
     return savedData
