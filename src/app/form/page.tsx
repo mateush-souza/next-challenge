@@ -1,70 +1,84 @@
 "use client"
 import React, { useState, useEffect } from 'react';
 
-  type VehicleFormProps = {
-    vehicle?: Vehicle;
-    onSave: (vehicle: Vehicle) => void;
-    onCancel: () => void;
-  };
-  
+
+type Vehicle = {
+  placa: string;
+  possuiPlaca: boolean;
+  marca: string;
+  tipoMotor: string;
+  transmissao: string;
+  cor: string;
+  quilometragem: string;
+  desconheceQuilometragem: boolean;
+  manutencaoRecente: string;
+  semManutencaoRecente: boolean;
+  observacoes: string;
+  concordaTermos: boolean;
+};
+
+type VehicleFormProps = {
+  vehicle?: Vehicle;
+  onSave: (vehicle: Vehicle) => void;
+  onCancel: () => void;
+};
+
   export default function Form({ vehicle, onSave, onCancel }: VehicleFormProps) {
     const [vehicleData, setVehicleData] = useState<Vehicle>(() => {
       const savedData = localStorage.getItem('vehicleData');
       return savedData
-        ? JSON.parse(savedData)
-        : {
-            placa: '',
-            possuiPlaca: false,
-            marca: '',
-            tipoMotor: '',
-            transmissao: '',
-            cor: '',
-            quilometragem: '',
-            desconheceQuilometragem: false,
-            manutencaoRecente: '',
-            semManutencaoRecente: false,
-            observacoes: '',
-            concordaTermos: false,
-          };
-    });
-  
-    useEffect(() => {
+          ? JSON.parse(savedData)
+          : {
+                placa: '',
+                possuiPlaca: false,
+                marca: '',
+                tipoMotor: '',
+                transmissao: '',
+                cor: '',
+                quilometragem: '',
+                desconheceQuilometragem: false,
+                manutencaoRecente: '',
+                semManutencaoRecente: false,
+                observacoes: '',
+                concordaTermos: false,
+            };
+  });
 
+  useEffect(() => {
       localStorage.setItem('vehicleData', JSON.stringify(vehicleData));
-    }, [vehicleData]);
-  
-    const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement> | any) => {
+  }, [vehicleData]);
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | any>) => {
       const { name, value, type, checked } = e.target;
       setVehicleData((prev) => ({
-        ...prev,
-        [name]: type === 'checkbox' ? checked : value,
+          ...prev,
+          [name]: type === 'checkbox' ? checked : value,
       }));
-    };
-  
-    const handleSubmit = (e: React.FormEvent) => {
+  };
+
+  const handleSubmit = (e: React.FormEvent) => {
       e.preventDefault();
       if (!vehicleData.marca || !vehicleData.tipoMotor || !vehicleData.transmissao || !vehicleData.cor || !vehicleData.concordaTermos) {
-        alert('Por favor, preencha todos os campos obrigatórios e aceite os Termos de Uso.');
-        return;
+          alert('Por favor, preencha todos os campos obrigatórios e aceite os Termos de Uso.');
+          return;
       }
       onSave(vehicleData);
       localStorage.removeItem('vehicleData'); // Limpa os dados após salvar
       setVehicleData({
-        placa: '',
-        possuiPlaca: false,
-        marca: '',
-        tipoMotor: '',
-        transmissao: '',
-        cor: '',
-        quilometragem: '',
-        desconheceQuilometragem: false,
-        manutencaoRecente: '',
-        semManutencaoRecente: false,
-        observacoes: '',
-        concordaTermos: false,
+          placa: '',
+          possuiPlaca: false,
+          marca: '',
+          tipoMotor: '',
+          transmissao: '',
+          cor: '',
+          quilometragem: '',
+          desconheceQuilometragem: false,
+          manutencaoRecente: '',
+          semManutencaoRecente: false,
+          observacoes: '',
+          concordaTermos: false,
       });
-    };
-  
+  };
     return (
       <form onSubmit={handleSubmit} className="space-y-4">
         <div>
