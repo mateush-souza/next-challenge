@@ -1,6 +1,6 @@
 "use client"
 import React, { useState, useEffect } from 'react';
-import Form from '@/app/form/page'
+import Form from './Form'
 
 
 export default function GerencVeiculos() {
