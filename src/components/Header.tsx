@@ -35,7 +35,7 @@ export default function Header() {
              <Link href={'/'}>Home</Link>
             </li>
             <li className="cursor-pointer border-b-3 border-transparent hover:border-blue-500">
-              Diagnostico
+             <Link href={'/login'}>Diagnostico</Link>
             </li>
             <li
               className="cursor-pointer border-b-3 border-transparent hover:border-blue-500"
